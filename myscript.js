@@ -28,13 +28,13 @@ function playRound(playerSelection, computerSelection) {
         //Lose
         case playerSelection === "Rock" && computerSelection === "Paper":
             computerScore++;
-            return result = `You lose, ${playerSelection} beats ${computerSelection}`;
+            return result = `You lose, ${computerSelection} beats your ${playerSelection}`;
         case playerSelection === "Paper" && computerSelection === "Scissors":
             computerScore++;
-            return result = `You lose, ${playerSelection} beats ${computerSelection}`;
+            return result = `You lose, ${computerSelection} beats your ${playerSelection}`;
         case playerSelection === "Scissors" && computerSelection === "Rock":
             computerScore++;
-            return result = `You lose, ${playerSelection} beats ${computerSelection}`;
+            return result = `You lose, ${computerSelection} beats your ${playerSelection}`;
         //Win
         case playerSelection === "Rock" && computerSelection === "Scissors":
             playerScore++;
